@@ -1,0 +1,94 @@
+.im{
+    display:inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+.u{
+    display:inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+.cu{
+    width:11em;
+    border:1px solid #000000;
+    word-wrap:break-word;
+} 
+.rp{
+color: red;
+}
+.bp{
+color: blue;
+}
+.rk{
+    color: #de5499;
+}
+* {
+    box-sizing: border-box;
+  }
+  :root {
+    --background-color: black;
+    --text-color: hsl(0, 0%, 100%);
+  }
+  body {
+    margin: 0;
+  }
+  .wrapper {
+    display: grid;
+    place-content: center;
+    background-color: var(--background-color);
+    min-height: 100vh;
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(1.5rem, 1rem + 18vw, 15rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-color);
+  }
+  
+  .wrapper > div {
+    grid-area: 1/1/-1/-1;
+  }
+  .top {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+  }
+  .bottom {
+    clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+    color: transparent;
+    background: -webkit-linear-gradient(177deg, black 53%, var(--text-color) 65%);
+    background: linear-gradient(177deg, black 53%, var(--text-color) 65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: translateX(-0.02em);
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
+body {
+  background: white;
+}
+
+div {
+  font-family:  'Calligraffitti', cursive;
+  font-weight: 10;
+  font-size: 7rem;
+  position: absolute;
+  text-shadow: -15px 5px 20px #ced0d3;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%,-50%);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #e90e33;
+  text-shadow: 5px 5px 0px #FFB650, 
+    10px 10px 0px #271f09, 
+    15px 15px 0px  #0e331c, 
+    20px 20px 0px #b46689, 
+    25px 25px 0px #6868AC, 
+    30px 30px 0px hsl(0, 73%, 48%);
+}
+.pd{
+    top: 100%;
+    left: 40%;
+    font-size: 4rem;
+    text-align: center;
+}
